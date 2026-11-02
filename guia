@@ -1,0 +1,32 @@
+# 1. Crear el directorio del proyecto y acceder a él
+mkdir enterprise-audit-fusion
+cd enterprise-audit-fusion
+
+# 2. Inicializar el repositorio Git
+git init
+
+# 3. Crear el archivo .gitignore estándar
+cat << 'EOF' > .gitignore
+__pycache__/
+*.pyc
+.env
+.venv
+output/
+*.tmp
+EOF
+
+# 4. Crear un README.md profesional con arquitectura Big 4
+cat << 'EOF' > README.md
+# Enterprise Audit & Finding Fusion System
+
+Script enterprise para la consolidación, deduplicación hash y cálculo de severidad de hallazgos de auditoría (Financiera, Fiscal, Forense e IT), basado en la arquitectura de **Single Source of Truth** empleada por las firmas Big 4.
+
+## Funcionalidades
+- **Deduplicación inteligente:** Generación de SHA-256 por condición y causa raíz.
+- **Normalización de Severidad:** Matriz de riesgo $(Impacto \times Probabilidad)$.
+- **Consolidación Financiera:** Sumatoria automática de impacto económico por hallazgo repetido.
+- **Doble Entregable:** Salida estructurada JSON y Reporte Ejecutivo Markdown.
+
+## Uso Rápido
+```bash
+python enterprise_audit_fusion.py --inputs audit_data.json --out-json output_fused.json --out-report INFORME_FINAL.md
