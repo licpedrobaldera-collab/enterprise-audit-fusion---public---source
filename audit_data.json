@@ -1,0 +1,28 @@
+[
+  {
+    "area": "Impuestos / DGII",
+    "title": "Omisión de retenciones e-NCF",
+    "condition": "Falta de comprobantes electrónicos en gastos operativos mayores a DOP 50,000.",
+    "criteria": "Normativa DGII Aviso 06-26 / Ley 11-92",
+    "cause": "Falta de validación automática en el módulo ERP",
+    "effect": "Riesgo de impugnación de costos y penalidades tributarias",
+    "recommendation": "Implementar validación API e-NCF antes del registro de 606",
+    "impact": 5,
+    "probability": 5,
+    "financial_impact": 12500.00,
+    "source_file": "Auditoria_Fiscal_2026.json"
+  },
+  {
+    "area": "Impuestos / DGII",
+    "title": "Omisión de retenciones e-NCF",
+    "condition": "Falta de comprobantes electrónicos en gastos operativos mayores a DOP 50,000.",
+    "criteria": "Normativa DGII Aviso 06-26 / Ley 11-92",
+    "cause": "Falta de validación automática en el módulo ERP",
+    "effect": "Riesgo de impugnación de costos y penalidades tributarias",
+    "recommendation": "Implementar validación API e-NCF antes del registro de 606",
+    "impact": 5,
+    "probability": 5,
+    "financial_impact": 7500.00,
+    "source_file": "Revision_Forense_IT.json"
+  }
+]
